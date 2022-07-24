@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    background-color: #205375;
+    color: #EFEFEF;
+    gap: 50px;
+}
+
+h1,
+h4 {
+    margin: 0;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.field {
+    height: 150px;
+    width: 150px;
+    border: 2px solid #112B3C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.field:hover {
+    background-color: #116299;
+}
+
+#field0 {
+    border-top-color: #205375;
+    border-left-color: #205375;
+}
+
+#field1 {
+    border-top-color: #205375;
+}
+
+#field2 {
+    border-top-color: #205375;
+    border-right-color: #205375;
+}
+
+#field3 {
+    border-left-color: #205375;
+}
+
+#field5 {
+    border-right-color: #205375;
+}
+
+#field6 {
+    border-bottom-color: #205375;
+    border-left-color: #205375;
+}
+
+#field7 {
+    border-bottom-color: #205375;
+}
+
+#field8 {
+    border-bottom-color: #205375;
+    border-right-color: #205375;
+}
+
+#announcer {
+    height: 32px;
+}
+
+#restart {
+    font-family: inherit;
+    font: inherit;
+    padding: 10px;
+    color: #112B3C;
+    background-color: #EFEFEF;
+    cursor: pointer;
+    border: none;
+}
+
+#restart:active {
+    transform: scale(1.1);
+}
